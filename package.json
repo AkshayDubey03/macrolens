@@ -1,0 +1,14 @@
+{
+  "name": "macrolens",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A camera-first personal nutrition journal with an honest review-before-save workflow.",
+  "type": "module",
+  "engines": { "node": ">=24" },
+  "scripts": {
+    "dev": "node --watch --env-file-if-exists=.env server.mjs",
+    "start": "node --env-file-if-exists=.env server.mjs",
+    "test": "node --test test/*.test.mjs",
+    "check": "node --check server.mjs && node --check lib/domain.mjs && node --check lib/vision.mjs && node --check public/app.js && node --check public/sw.js"
+  }
+}
